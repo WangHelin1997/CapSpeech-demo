@@ -221,6 +221,7 @@
         <h2 class="title is-3">Table of Contents</h2>
         <div class="is-centered">
           <ul>
+            <li><a href="#capspeechdata"><b>CapSpeech DataSets</b></a></li>
             <li><a href="#capspeechpt"><b>CapSpeech-PT DataSet</b></a></li>
             <li><a href="#capspeechptsedb"><b>CapSpeech-PT-SEDB DataSet</b></a></li>
             <li><a href="#agentdb"><b>CapSpeech-AgentDB DataSet</b></a></li>
@@ -239,6 +240,297 @@
   </div>
 </section>
 
+<section id="capspeechdata" class="hero">
+  <div class="hero-body">
+    <div class="container is-fluid">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">CapSpeech DataSets</h2>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div style="width: 1400px; margin: auto;">
+        <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
+          <thead>
+            <tr style="text-align: left;">
+              <th>
+                <strong>
+                  Description
+                </strong>
+              </th>
+              <th><strong>
+                <span class="icon" style="color: #384e41;">
+                  <i class="fas fa-headphones"></i>
+                </span>
+                  Audio
+              </strong></th>
+              <th>
+                <strong>
+                  <span class="icon">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  Caption
+                </strong>
+              </th>
+
+            </tr>
+          </thead>
+          <tbody>
+        <tr>
+          <td width="28%" style="text-align: left;">
+            <span>Pretraining set for CapTTS</span>
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/amphion/Emilia-Dataset/tree/fc71e07e8572f5f3be1dbd02ed3172a4d298f152" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>Emilia-EN</span>
+            </a>
+            <a href="https://huggingface.co/datasets/speechcolab/gigaspeech" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>GigaSpeech</span>
+            </a>
+            <a href="https://commonvoice.mozilla.org/en/datasets" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>CommonVoice-EN</span>
+            </a> 
+            <a href="https://openslr.org/94/" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>MLS-EN</span>
+            </a>                
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapSpeech-PT" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF" style="height: 1em; vertical-align: middle;" />
+              </span>
+              <span>CapSpeech-PT</span>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="28%" style="text-align: left;">
+            <span>Pretraining set for CapTTS-SE</span>
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapSpeech-PT-SEDB-Audio" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>CapSpeech-PT-SEDB</span>
+            </a>     
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapSpeech-PT" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF" style="height: 1em; vertical-align: middle;" />
+              </span>
+              <span>CapSpeech-PT-SEDB</span>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="28%" style="text-align: left;">
+            <span>High-quality pretraining subset for CapTTS-SE</span>
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapSpeech-PT-SEDB-HQ-Audio" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>CapSpeech-PT-SEDB-HQ</span>
+            </a>               
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapSpeech-LibrittsRmix-BaseSet" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF" style="height: 1em; vertical-align: middle;" />
+              </span>
+              <span>CapSpeech-PT-SEDB-HQ</span>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="28%" style="text-align: left;">
+            <span>SFT set for CapTTS</span>
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://www.openslr.org/141/" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>LibriTTS-R</span>
+            </a>
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/voxceleb/" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>VoxCeleb</span>
+            </a>     
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/voxceleb/" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>VoxCeleb2</span>
+            </a>  
+            <a href="https://github.com/facebookresearch/ears_dataset/blob/main/download_ears.py" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>EARS</span>
+            </a>  
+            <a href="https://github.com/facebookresearch/textlesslib/tree/main/examples/expresso/dataset" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>Expresso</span>
+            </a>  
+            <a href="https://datashare.ed.ac.uk/handle/10283/2950" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>VCTK</span>
+            </a>            
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapTTS-SFT" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF" style="height: 1em; vertical-align: middle;" />
+              </span>
+              <span>CapTTS-SFT</span>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="28%" style="text-align: left;">
+            <span>SFT set for EmoCapTTS</span>
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://github.com/facebookresearch/ears_dataset/blob/main/download_ears.py" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>EARS</span>
+            </a>  
+            <a href="https://github.com/facebookresearch/textlesslib/tree/main/examples/expresso/dataset" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>Expresso</span>
+            </a>             
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapTTS-SFT" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF" style="height: 1em; vertical-align: middle;" />
+              </span>
+              <span>CapTTS-SFT</span>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="28%" style="text-align: left;">
+            <span>SFT set for AccCapTTS</span>
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/voxceleb/" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>VoxCeleb</span>
+            </a>     
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/voxceleb/" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>VoxCeleb2</span>
+            </a>  
+            <a href="https://datashare.ed.ac.uk/handle/10283/2950" class="external-link button is-normal is-rounded is-light">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>VCTK</span>
+            </a>                  
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapTTS-SFT" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF" style="height: 1em; vertical-align: middle;" />
+              </span>
+              <span>CapTTS-SFT</span>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="28%" style="text-align: left;">
+            <span>SFT set for CapTTS-SE</span>
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapSpeech-SEDB-Audio" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>CapSpeech-SEDB</span>
+            </a>               
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapSpeech-SEDB" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF" style="height: 1em; vertical-align: middle;" />
+              </span>
+              <span>CapSpeech-SEDB</span>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="28%" style="text-align: left;">
+            <span>SFT set for AgentTTS</span>
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapSpeech-AgentDB-Audio" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>CapSpeech-AgentDB</span>
+            </a>               
+          </td>
+          <td width="28%" style="text-align: left;">
+            <a href="https://huggingface.co/datasets/OpenSound/CapSpeech-AgentDB" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF" style="height: 1em; vertical-align: middle;" />
+              </span>
+              <span>CapSpeech-AgentDB</span>
+            </a>
+          </td>
+        </tr>
+
+            </tbody>
+        </table>
+      </div>
+      </div>
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                  <a href="#toc" class="button is-primary">Go Back to Table of Contents</a>
+                </div>
+              </div>
+    </div>
+  </div>
+</section>
+
 <section id="capspeechpt" class="hero">
   <div class="hero-body">
     <div class="container is-fluid">
@@ -253,7 +545,7 @@
       <div class="columns is-centered has-text-centered">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
-            <tr style="text-align: center;">
+            <tr style="text-align: left;">
               <th>
                 <strong>
                   <span class="icon">
@@ -282,7 +574,7 @@
         <tr>
           <td width="28%" style="text-align: left;">So what happens is when you click on suggest page and you choose</td>
           <td width="28%" style="text-align: left;">A middle-aged woman delivers her speech with a subtle expressiveness, her voice deep and resonant due to its low pitch. Her pace is unhurried, lending an air of thoughtfulness and deliberation to her tone.</td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
               <source src="static/audio_sample/capspeech-pt/YOU0000004420_S0000018.wav"
                 type="audio/wav">
             </audio></td>
@@ -290,7 +582,7 @@
       <tr>
         <td width="28%" style="text-align: left;">This adventure of ours was destined to differ in one respect from others which i have narrated.</td>
         <td width="28%" style="text-align: left;">In a somber, unwavering tone, a middle-aged man delivers his words with a low pitch, his steady pace slightly accelerating, yet maintaining a sense of controlled cadence.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capspeech-pt/AUD0000001417_S0002797.wav"
               type="audio/wav">
           </audio></td>
@@ -298,7 +590,7 @@
       <tr>
         <td width="28%" style="text-align: left;"> But it really seems like they skipped a whole bunch of stuff and went straight to the trial.Notwithstanding, louis should probably be talking to the jury, if there is a jury present at this time, and not to the judge.</td>
         <td width="28%" style="text-align: left;">A young adult male speaks with dynamic inflection and a brisk, energetic pace. His slightly high pitch lends a sense of urgency and concentration to his delivery.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capspeech-pt/YOU0000005348_S0000053.wav"
               type="audio/wav">
           </audio></td>
@@ -306,7 +598,7 @@
       <tr>
         <td width="28%" style="text-align: left;">It immediately triggered a deep sense of sadness and grieving.And my phone lit up with people who are sobbing,</td>
         <td width="28%" style="text-align: left;">In a room with minimal background noise and reverberation, an elderly man delivers his speech in a monotone manner, his slightly high-pitched voice resonating with a sense of calm and wisdom. His pace is measured, with a slight slowness that allows his words to echo with depth and significance.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capspeech-pt/YOU0000017887_S0000341.wav"
               type="audio/wav">
           </audio></td>
@@ -314,7 +606,7 @@
       <tr>
         <td width="28%" style="text-align: left;">So youve got a number of options, so what it does, it works in this idea of creating a graph projection.</td>
         <td width="28%" style="text-align: left;">The speech emanates from a young adult woman, her voice, a melodious symphony of high-pitched exuberance. Her words flow rapidly, each syllable a testament to her animated spirit, imbued with a subtly expressive tone.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capspeech-pt/YOU0000001726_S0000247.wav"
               type="audio/wav">
           </audio></td>
@@ -346,7 +638,7 @@
       <div class="columns is-centered has-text-centered">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
-            <tr style="text-align: center;">
+            <tr style="text-align: left;">
               <th>
                 <strong>
                   <span class="icon">
@@ -376,7 +668,7 @@
         <td width="28%" style="text-align: left;">	
           montmorency made up his mind to defend on the whole coast of provence only marseilles <span style="background-color: #fdcbcc;">&lt;knock&gt;</span> <span style="background-color: #fdcbcc;">&lt;I&gt;</span> <span style="background-color: #fdcbcc;">&lt;/I&gt;</span> and arles he pulled down the ramparts of the other towns which were left exposed to the enemy</td>
         <td width="28%" style="text-align: left;">A young adult male delivers his speech with a monotone, measured tone, maintaining a consistent rhythm. His moderate pitch, carries a sense of calm assurance.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capspeech-pt-sedb/6599_38591_000001_000008_01.wav"
               type="audio/wav">
           </audio></td>
@@ -385,7 +677,7 @@
         <td width="28%" style="text-align: left;">	
           <span style="background-color: #fdcbcc;">&lt;applause&gt;</span> <span style="background-color: #fdcbcc;">&lt;I&gt;</span> <span style="background-color: #fdcbcc;">&lt;/I&gt;</span> i have neither head nor arm do not despise but help me</td>
         <td width="28%" style="text-align: left;">A middle-aged male delivers his speech with a moderately paced rhythm, his tone characterized by a strong monotone. His voice, with a moderate pitch, carries an understated yet deliberate tone, allowing the content of his words to take center stage.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capspeech-pt-sedb/8288_274162_000014_000002_01.wav"
               type="audio/wav">
           </audio></td>
@@ -394,7 +686,7 @@
         <td width="28%" style="text-align: left;">	
           the man from <span style="background-color: #fdcbcc;">&lt;cough&gt;</span> <span style="background-color: #fdcbcc;">&lt;B&gt;</span> the spacer camp <span style="background-color: #fdcbcc;">&lt;/B&gt;</span> was using the stream as his road</td>
         <td width="28%" style="text-align: left;">In a slightly fast-paced flow, a young woman articulates her thoughts in a subdued, slightly low-pitched tone. Her speech is characterized by a monotone quality, imbuing it with an air of calm and measured deliberation.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capspeech-pt-sedb/1263_141777_000019_000002_01.wav"
               type="audio/wav">
           </audio></td>
@@ -403,7 +695,7 @@
         <td width="28%" style="text-align: left;">	
           jane is now a common grown up with a daughter called margaret and every spring cleaning time except when he forgets peter comes for margaret and takes <span style="background-color: #fdcbcc;">&lt;writing&gt;</span> <span style="background-color: #fdcbcc;">&lt;B&gt;</span> her to the neverland where she tells him stories about himself to which he listens eagerly <span style="background-color: #fdcbcc;">&lt;/B&gt;</span></td>
         <td width="28%" style="text-align: left;">A middle-aged man delivers his speech with a slightly fast tempo and a slightly high-pitched vocal tone. His tone remains fairly monotone.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capspeech-pt-sedb/1040_133433_000168_000001_01.wav"
               type="audio/wav">
           </audio></td>
@@ -436,7 +728,7 @@
       <div class="columns is-centered has-text-centered">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
-            <tr style="text-align: center;">
+            <tr style="text-align: left;">
               <th>
                 <strong>
                   <span class="icon">
@@ -466,7 +758,7 @@
       <tr>
         <td width="28%" style="text-align: left;">Oh, how I long for the taste of victory! Ha ha ha!</td>
         <td width="28%" style="text-align: left;">An enthusiastic laughter filled with longing, as if craving for something delightful.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agentdb/0691.wav"
               type="audio/wav">
           </audio></td>
@@ -474,7 +766,7 @@
       <tr>
         <td width="28%" style="text-align: left;"> Um, yeah, I think I saw them somewhere. It's just that I'm not sure if I understand all these technical terms.</td>
         <td width="28%" style="text-align: left;">Uncertain and hesitant voice, reflecting a state of bewilderment.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agentdb/0560.wav"
               type="audio/wav">
           </audio></td>
@@ -482,7 +774,7 @@
       <tr>
         <td width="28%" style="text-align: left;">I can't believe we stumbled upon this hidden gem of a roadside attraction!</td>
         <td width="28%" style="text-align: left;">Breathless panting, fueled by curiosity and intense interest.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agentdb/0986.wav"
               type="audio/wav">
           </audio></td>
@@ -490,7 +782,7 @@
       <tr>
         <td width="28%" style="text-align: left;">I despise every strand of hair on your wretched head, and I'll make sure you leave this salon in ruins!</td>
         <td width="28%" style="text-align: left;">Aggressive, seething delivery reflecting deep-rooted hatred.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agentdb/1333.wav"
               type="audio/wav">
           </audio></td>
@@ -498,7 +790,7 @@
       <tr>
         <td width="28%" style="text-align: left;">How can I assist you today with our delicious bakery treats?</td>
         <td width="28%" style="text-align: left;">Warm, supportive tone indicating a willingness to help.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agentdb/1561.wav"
               type="audio/wav">
           </audio></td>
@@ -533,7 +825,7 @@
       <div class="columns is-centered has-text-centered">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
-            <tr style="text-align: center;">
+            <tr style="text-align: left;">
               <th>
                 <strong>
                   <span class="icon">
@@ -563,7 +855,7 @@
         <td width="28%" style="text-align: left;">	
           <span style="background-color: #fdcbcc;">&lt;clock_alarm&gt;</span> <span style="background-color: #fdcbcc;">&lt;I&gt;</span> <span style="background-color: #fdcbcc;">&lt;/I&gt;</span> if he could only be there first and catch bob cratchit coming late</td>
         <td width="28%" style="text-align: left;">An elderly man, his voice subtly deep and steady, delivers his words in a slightly brisk pace, the monotone tone of his speech lending a sense of wisdom and gravitas, despite the swift delivery</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttssedb/i_224.wav"
               type="audio/wav">
           </audio></td>
@@ -572,7 +864,7 @@
         <td width="28%" style="text-align: left;">	
           he offered his hand to the baroness who descending <span style="background-color: #fdcbcc;">&lt;clapping&gt;</span> <span style="background-color: #fdcbcc;">&lt;I&gt;</span> <span style="background-color: #fdcbcc;">&lt;/I&gt;</span> took it with a peculiarity of manner imperceptible to every one but monte cristo</td>
         <td width="28%" style="text-align: left;">A young female's speech is characterized by an even, steady delivery. Her voice carries a moderate pitch, and her pace is a comfortable, moderate speed, creating an overall impression of calm and measured articulation.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttssedb/i_237.wav"
               type="audio/wav">
           </audio></td>
@@ -582,7 +874,7 @@
         <td width="28%" style="text-align: left;">	
           loose indentures and harsh laws put them at the mercy of their masters <span style="background-color: #fdcbcc;">&lt;keyboard_typing&gt;</span> <span style="background-color: #fdcbcc;">&lt;B&gt;</span> it would not be unfair <span style="background-color: #fdcbcc;">&lt;/B&gt;</span> to add that such was their lot in all other colonies</td>
         <td width="28%" style="text-align: left;">A young adult male delivers his speech with a monotone, measured tone, maintaining a consistent rhythm. His moderate pitch, carries a sense of calm assurance.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttssedb/b_063.wav"
               type="audio/wav">
           </audio></td>
@@ -591,7 +883,7 @@
         <td width="28%" style="text-align: left;">	
          in the first chapter of his geography <span style="background-color: #fdcbcc;">&lt;clapping&gt;</span> <span style="background-color: #fdcbcc;">&lt;B&gt;</span> moses tells us there were only two people in the world <span style="background-color: #fdcbcc;">&lt;/B&gt;</span></td>
         <td width="28%" style="text-align: left;">In a moderately paced and subdued manner, a middle-aged man delivers his speech with a slightly low-pitched, monotone tone, presenting an understated yet deliberate air.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttssedb/b_097.wav"
               type="audio/wav">
           </audio></td>
@@ -625,7 +917,7 @@
       <div class="columns is-centered has-text-centered">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
-            <tr style="text-align: center;">
+            <tr style="text-align: left;">
               <th>
                 <strong>
                   <span class="icon">
@@ -663,11 +955,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Now you can see that this is an odd setting right, odd setup which means that left subarray has one element extra compared to the right subarray.        </td>
         <td width="28%" style="text-align: left;">A male speaker with an American accent delivers his speech at a measured pace in a clean environment. His voice is medium-pitched and flows smoothly.        </td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/base2-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/base2-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -675,11 +967,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Wednesday, December twenty fifth is in a hundred and forty days.</td>
         <td width="28%" style="text-align: left;"> In a slightly clean environment, a man speaks with a high-pitched voice, displaying confusion at a slow speaking pace. (American accent)      </td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/ex01_confused_00084-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/ex01_confused_00084-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -687,11 +979,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Use "hir" or "ze" as gender neutral pronouns?</td>
         <td width="28%" style="text-align: left;">A male speaker delivers his words in a measured pace, exhibiting a high-pitched, happy, and animated tone in a clean environment. </td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/ex01_happy_00237-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/ex01_happy_00237-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -699,11 +991,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Here's the forecast for New York from today to next Tuesday.</td>
         <td width="28%" style="text-align: left;"> A male speaker whispers at a measured speed. His voice has a high-pitched tone. </td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/ex03_whisper_00145-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/ex03_whisper_00145-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -711,11 +1003,11 @@
       <tr>
         <td width="28%" style="text-align: left;">From these genres and from these spaces, you know, and the feelings of what these games can bring.        </td>
         <td width="28%" style="text-align: left;">An elderly woman, with a low-pitched voice, delivers her speech in a slow, yet expressive and animated manner. Her words flow like a captivating story, each sentence filled with emotion and wisdom, resonating deeply with her audience.        </td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/base1-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/base1-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -723,11 +1015,11 @@
       <tr>
         <td width="28%" style="text-align: left;">the stars began to crumble and a cloud of fine stardust fell through space      </td>
         <td width="28%" style="text-align: left;">With a thick, dark, slightly weakened voice, he spoke in a clear, sincere, and intellectual tone, his calm, wild nature hiding a kind and modest heart.       </td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/1089-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/1089_134686_000007_000005-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -735,11 +1027,11 @@
       <tr>
         <td width="28%" style="text-align: left;">in germany they generally  hock the kaiser  </td>
         <td width="28%" style="text-align: left;">Her voice, a combination of feminine allure and intellectual brilliance, resonates with a sense of calm and elegance, making her every word a testament to her cool sophistication.      </td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/121_121726-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/121_121726_000029_000003-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -747,11 +1039,11 @@
       <tr>
         <td width="28%" style="text-align: left;">then why did the sammyadd say we'd let ourselves in for a nice thing asked anthea</td>
         <td width="28%" style="text-align: left;">A teenager with a smooth, gender-ambiguous voice, perfect for captivating storytelling.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/dreamvoice1-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/dreamvoice1-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -759,11 +1051,11 @@
       <tr>
         <td width="28%" style="text-align: left;">i want to see what he was when he was bright and young before the world had hardened him</td>
         <td width="28%" style="text-align: left;">A mature male voice, rough and husky, ideal for public speaking engagements.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/dreamvoice2.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/captts/dreamvoice2-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -796,7 +1088,7 @@
       <div class="columns is-centered has-text-centered">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
-            <tr style="text-align: center;">
+            <tr style="text-align: left;">
               <th>
                 <strong>
                   <span class="icon">
@@ -833,11 +1125,11 @@
       <tr>
         <td width="28%" style="text-align: left;"><span style="background-color: #fdcbcc;">&lt;can_opening&gt; &lt;I&gt; &lt;/I&gt;</span> am i my brother's keeper you ask she continued.</td>
         <td width="28%" style="text-align: left;">A middle-aged male's delivery exhibits a measured pace, devoid of any significant inflection. Remarkably, his voice maintains an unusually high pitch, creating an intriguing contrast to his otherwise monotone tone.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/can_ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/can-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -846,11 +1138,11 @@
         <td width="28%" style="text-align: left;"> it did not beckon or indeed move at all <span style="background-color: #fdcbcc;">&lt;coughing&gt;</span> <span style="background-color: #fdcbcc;">&lt;I&gt; &lt;/I&gt;</span> it was as still as the hand of death
         </td>
         <td width="28%" style="text-align: left;">A middle-aged man delivers his words in a monotone manner, maintaining a steady, moderate pace. His slightly elevated pitch, while not overly dramatic, imparts a subtle sense of gravity to his speech.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/coughing_ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/coughing_nar.wav"
               type="audio/wav">
           </audio></td>
@@ -858,11 +1150,11 @@
       <tr>
         <td width="28%" style="text-align: left;"> at this moment miss brandon entered with her brilliant cousin rachel the blonde and the dark it was a dazzling contrast <span style="background-color: #fdcbcc;">&lt;dog&gt;</span> <span style="background-color: #fdcbcc;">&lt;I&gt; &lt;/I&gt;</span> </td>
         <td width="28%" style="text-align: left;">A young woman speaks at a moderate pace, her voice carrying a hint of monotone. Remarkably, she maintains a high pitch, giving her speech an air of focused determination.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/dog_ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/dog_nar.wav"
               type="audio/wav">
           </audio></td>
@@ -870,11 +1162,11 @@
       <tr>
         <td width="28%" style="text-align: left;"><span style="background-color: #fdcbcc;">&lt;cat&gt; &lt;I&gt; &lt;/I&gt;</span> he stood still in deference to their calls and parried their banter with easy words  </td>
         <td width="28%" style="text-align: left;">The speech emanates from a middle-aged man, his voice resonating with a slight, low-pitch timbre. His delivery is steady, devoid of emotive inflections, yet not entirely monotonous. The moderate pace of his speech lends an air of thoughtful consideration to his words.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/cat_ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/cat_nar.wav"
               type="audio/wav">
           </audio></td>
@@ -883,11 +1175,11 @@
         <td width="28%" style="text-align: left;"> i know said margaret bolton with a half anxious smile <span style="background-color: #fdcbcc;">&lt;clapping&gt;</span> <span style="background-color: #fdcbcc;">&lt;B&gt;</span> the chafes against all the ways of friends <span style="background-color: #fdcbcc;">&lt;/B&gt;</span> but what will thee do
         </td>
         <td width="28%" style="text-align: left;">An old female speaker, her voice subtly animated, adopts a slightly low pitch. Her speech pace is moderate.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/clapping_ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/clapping_nar.wav"
               type="audio/wav">
           </audio></td>
@@ -895,11 +1187,11 @@
       <tr>
         <td width="28%" style="text-align: left;"><span style="background-color: #fdcbcc;">&lt;keyboard_typing&gt; &lt;B&gt;</span> at the inception of plural marriage among the latter day saints <span style="background-color: #fdcbcc;">&lt;/B&gt;</span> there was no law national or state against its practise        </td>
         <td width="28%" style="text-align: left;">A middle-aged man, his voice unwavering and steady, delivers his speech in a monotone manner. The moderate pitch, neither too high nor too low, adds a touch of gravitas to his words. The slight fast pace hints at a sense of urgency or importance, yet his tone remains consistently measured and controlled.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/keyboard_ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttsse/keyboard_nar.wav"
               type="audio/wav">
           </audio></td>
@@ -932,7 +1224,7 @@
       <div class="columns is-centered has-text-centered">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
-            <tr style="text-align: center;">
+            <tr style="text-align: left;">
               <th>
                 <strong>
                   <span class="icon">
@@ -969,11 +1261,11 @@
       <tr>
         <td width="28%" style="text-align: left;">This is a sector in overall deficit and urgent action is required.</td>
         <td width="28%" style="text-align: left;">An <span style="background-color: #b1cdf5;">Indian-accented</span> professional woman's voice for client and public interaction.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p248_336-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p248_336-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -981,11 +1273,11 @@
       <tr>
         <td width="28%" style="text-align: left;">When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow.</td>
         <td width="28%" style="text-align: left;">A mature, deep, and rough <span style="background-color: #b1cdf5;">Scottish-accented</span> female voice, with a hint of weakness, ideal for client and public interaction in customer service or community relations.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p249_006-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p249_006-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -993,11 +1285,11 @@
       <tr>
         <td width="28%" style="text-align: left;">If we live forever, can we really be said to live?</td>
         <td width="28%" style="text-align: left;">Bright teenage girl's voice, with an <span style="background-color: #b1cdf5;">American accent</span>, ideal for client and public interaction.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p300_215-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p300_215-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1005,11 +1297,11 @@
       <tr>
         <td width="28%" style="text-align: left;">It will decide today whether he should be struck off the register.</td>
         <td width="28%" style="text-align: left;">A young girl's <span style="background-color: #b1cdf5;">English-accented</span> voice, suitable for customer service and public engagement roles.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p277_307-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p277_307-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1017,11 +1309,11 @@
       <tr>
         <td width="28%" style="text-align: left;">But he stressed that the partnership is not a construction company.</td>
         <td width="28%" style="text-align: left;">A teenage girl's <span style="background-color: #b1cdf5;">Irish-accented</span> voice.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p266_151-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p266_151-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1029,11 +1321,11 @@
       <tr>
         <td width="28%" style="text-align: left;">He said because people had invited him.</td>
         <td width="28%" style="text-align: left;">Her mature and <span style="background-color: #b1cdf5;">South African-accented</span> voice is perfectly suited for client and public interaction roles.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p314_092-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p314_092-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1041,11 +1333,11 @@
       <tr>
         <td width="28%" style="text-align: left;">They are taking a stand against this.</td>
         <td width="28%" style="text-align: left;">An adult male voice, <span style="background-color: #b1cdf5;">Canadian</span> with a deep, rough quality.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p316_396-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p316_396-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1053,11 +1345,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Subs not used, McGraw.</td>
         <td width="28%" style="text-align: left;">A mature, <span style="background-color: #b1cdf5;">Australian</span> person voice, deep and rough.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p326_270-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p326_270-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1065,11 +1357,11 @@
       <!-- <tr>
         <td width="28%" style="text-align: left;">That was a bonus, but it was not the main objective.</td>
         <td width="28%" style="text-align: left;">A mature female voice, with a <span style="background-color: #fdcbcc;">New Zealand accent</span>, sounding feeble and faint.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p335_259-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/p335_259-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1102,7 +1394,7 @@
       <div class="columns is-centered has-text-centered">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
-            <tr style="text-align: center;">
+            <tr style="text-align: left;">
               <th>
                 <strong>
                   <span class="icon">
@@ -1140,11 +1432,11 @@
       <tr>
         <td width="28%" style="text-align: left;">The distant hum of traffic passed unnoticed in the background.</td>
         <td width="28%" style="text-align: left;">She speaks in a <span style="background-color: #f2cbfd;">calm, measured tone</span>, conveying a sense of quiet, unassuming presence.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_15687_neutral_sage-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_15687_neutral_sage-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1152,11 +1444,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Your silence is deafening; it's like a slap you can't deny.</td>
         <td width="28%" style="text-align: left;">The middle-aged speaker, with a slow, slightly animated murmur, carries a <span style="background-color: #f2cbfd;">palpable, unyielding resentment</span>.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_16808_angry_coral-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_16808_angry_coral-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1164,11 +1456,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Golden sunlight danced over the rippling blue waves, painting everything in shades of joy.</td>
         <td width="28%" style="text-align: left;">A middle-aged man, speaking with a moderate pitch and slightly slow rate, delivers his words with a <span style="background-color: #f2cbfd;">warm, animated enthusiasm</span>.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_8360_happy_verse-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_8360_happy_verse-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1176,11 +1468,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Dust settles on framed photographs, shadowing faces of forgotten smiles.</td>
         <td width="28%" style="text-align: left;">His low, slow, and melancholic voice carries a heavy-hearted tone, each word echoing with <span style="background-color: #f2cbfd;">a sense of sorrow</span>.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_18708_sad_verse-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_18708_sad_verse-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1188,11 +1480,11 @@
       <tr>
         <td width="28%" style="text-align: left;">The cat, usually aloof, suddenly curled up in his lap, purring contentedly.</td>
         <td width="28%" style="text-align: left;">A middle-aged man, speaking with a slightly high-pitched, slow, and slightly expressive tone, conveying <span style="background-color: #f2cbfd;">surprise with a gentle, bemused warmth</span>.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_19885_surprised_verse-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_19885_surprised_verse-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1200,11 +1492,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Why does your car smell like a dead RAT? It's absolutely vile.</td>
         <td width="28%" style="text-align: left;">A middle-aged woman speaks in a low, monotone voice, her words dripping with <span style="background-color: #f2cbfd;">disgust and annoyance</span>.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_22272_disgusted_sage-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_22272_disgusted_sage-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1212,11 +1504,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Dark smoke billowed from the engine as the car refused to start.</td>
         <td width="28%" style="text-align: left;">A middle-aged woman speaks in a low, slow, monotone tone, her words dripping with a <span style="background-color: #f2cbfd;">palpable, simmering frustration</span>.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_23208_fearful_coral-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/emo_acc/gpt4o_23208_fearful_coral-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1248,7 +1540,7 @@
       <div class="columns is-centered has-text-centered">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
-            <tr style="text-align: center;">
+            <tr style="text-align: left;">
               <th>
                 <strong>
                   <span class="icon">
@@ -1285,11 +1577,11 @@
       <tr>
         <td width="28%" style="text-align: left;">We must find a way out of here right now, before the vampires awaken and our lives are in grave danger!</td>
         <td width="28%" style="text-align: left;">Intense, urgent tone conveying a need for immediate action.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch1-0160-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch1-0160-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1297,11 +1589,11 @@
       <tr>
         <td width="28%" style="text-align: left;">If only I had pursued my passion for dance earlier, I could have become a professional dancer.</td>
         <td width="28%" style="text-align: left;">A voice tinged with regret, conveying a sense of longing for what could have been.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch1-1281-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch1-1281-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1309,11 +1601,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Please, step lightly on the path ahead, respecting nature's delicate balance as we make our way forward.</td>
         <td width="28%" style="text-align: left;">Quiet, submissive intonation reflecting a sense of yielding and compliance.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch2-2220-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch2-2220-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1321,11 +1613,11 @@
       <tr>
         <td width="28%" style="text-align: left;">The intricate patterns and vibrant colors of each quilt showcase the love and dedication poured into every stitch.</td>
         <td width="28%" style="text-align: left;">Sincere and soft-spoken voice filled with kindness and compassion.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch1-2316-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch1-2316-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1333,11 +1625,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Any moment now, we'll see the signal flare light up the sky, marking our path forward.</td>
         <td width="28%" style="text-align: left;">Expectant tone, filled with a sense of eager awaiting.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch4-0359-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch4-0359-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1345,11 +1637,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Just reboot the robot and step aside, clearly, this is beyond your expertise.</td>
         <td width="28%" style="text-align: left;">Cool, dismissive tone conveying disdain.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch4-0690-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch4-0690-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1357,11 +1649,11 @@
       <!-- <tr>
         <td width="28%" style="text-align: left;">Get out now, grab the stake and holy water, we have no time to waste, they're coming!</td>
         <td width="28%" style="text-align: left;">Rapid, almost overlapping speech, as if the thoughts are racing with anger.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch4-1871-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch4-1871-nar.wav"
               type="audio/wav">
           </audio></td>
@@ -1369,11 +1661,11 @@
       <tr>
         <td width="28%" style="text-align: left;">Are we truly convinced that this treaty will hold, given our histories and the vastness of the unknown universe?</td>
         <td width="28%" style="text-align: left;">Doubtful tone with a hint of questioning.</td>
-        <td width="12%" style="text-align: center;"><audio controls="">
+        <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch4-2176-ar.wav"
               type="audio/wav">
           </audio></td>
-          <td width="12%" style="text-align: center;"><audio controls="">
+          <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/agenttts/batch4-2176-nar.wav"
               type="audio/wav">
           </audio></td>
