@@ -33,6 +33,12 @@
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
+  <style>
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 
@@ -44,60 +50,64 @@
           <h1 class="title is-1 publication-title">CapSpeech: Enabling Downstream Applications in Style-Captioned Text-to-Speech</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=I_V0zBMAAAAJ">Helin Wang*</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=I_V0zBMAAAAJ">Helin Wang*</a>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=q6zeG8sAAAAJ">Jiarui Hai*</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=q6zeG8sAAAAJ">Jiarui Hai*</a>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=tPSb8YoAAAAJ">Dading Chong</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=tPSb8YoAAAAJ">Dading Chong</a>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=n72wEIkAAAAJ">Karan Thakkar</a><sup>1</sup>,
+              <a href="https://scholar.google.com/citations?user=n72wEIkAAAAJ">Karan Thakkar</a>,
             </span>
             <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=p7oF-XIAAAAJ">Tiantian Feng</a><sup>3</sup>,
+                <a href="https://scholar.google.com/citations?user=p7oF-XIAAAAJ">Tiantian Feng</a>,
               </span>
 
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=WNiojyAAAAAJ">Dongchao Yang</a><sup>4</sup>,
+                <a href="https://scholar.google.com/citations?user=WNiojyAAAAAJ">Dongchao Yang</a>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=71p6OBkAAAAJ">Junhyeok Lee</a><sup>1</sup>,
+                <a href="https://scholar.google.com/citations?user=71p6OBkAAAAJ">Junhyeok Lee</a>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.es/citations?user=WepMzXoAAAAJ">Laureano Moro-Velazquez</a><sup>1</sup>,
+                <a href="https://scholar.google.es/citations?user=WepMzXoAAAAJ">Laureano Moro-Velazquez</a>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.es/citations?user=8j1-qmAAAAAJ">Jesus Villalba</a><sup>1</sup>,
+                <a href="https://scholar.google.es/citations?user=8j1-qmAAAAAJ">Jesus Villalba</a>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=lwwVd7sAAAAJ">Zengyi Qin</a><sup>5</sup>,
+                <a href="https://scholar.google.com/citations?user=lwwVd7sAAAAJ">Zengyi Qin</a>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=8EDHmYkAAAAJ">Shrikanth Narayanan</a><sup>3</sup>,
+                <a href="https://scholar.google.com/citations?user=8EDHmYkAAAAJ">Shrikanth Narayanan</a>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=DlbELYkAAAAJ">Mounya Elhilali</a><sup>1</sup>,
+                <a href="https://scholar.google.com/citations?user=DlbELYkAAAAJ">Mounya Elhilali</a>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=G43gXjIAAAAJ">Najim Dehak</a><sup>1</sup>
+                <a href="https://scholar.google.com/citations?user=G43gXjIAAAAJ">Najim Dehak</a>
               </span>
           </div>
 
-          <div class="is-size-5 publication-authors">
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Johns Hopkins University </span>
             <span class="author-block"><sup>2</sup>Peking University </span>
             <span class="author-block"><sup>3</sup>University of Southern California</span>
             <span class="author-block"><sup>4</sup>The Chinese University of Hong Kong</span>
             <span class="author-block"><sup>5</sup>Massachusetts Institute of Technology</span>
-          </div>
+          </div> -->
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">* Indicates equal contribution</span>
           </div>
 
-<!--           <div class="is-size-5 publication-authors">
-            <span class="author-block">Submission to NeurIPS 2025</span>
-          </div> -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <img src="./static/images/affiliate.png" class="interpolation-image" width="700"
+                alt="Animated demonstration of SSR-Speech." />
+            </div>
+          </div>
+
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -143,7 +153,18 @@
 </section>
 
 
-
+<section id="video-demo" class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <video controls playsinline style="max-width: 100%; border-radius: 8px;">
+          <source src="static/video/capspeech.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <section id="abs" class="section" style="padding-top: 0px;">
@@ -169,35 +190,8 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop is-centered has-text-centered">
-    <div class="hero-body">
-      <h2 class="title is-3">CapSpeech Overview</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <!-- <h2 class="title is-3">SSR-Speech</h2> -->
-          <img src="./static/images/present.jpg" class="interpolation-image" width="1000"
-            alt="Animated demonstration of SSR-Speech." />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop is-centered has-text-centered">
-    <div class="hero-body">
-      <h2 class="title is-3">CapSpeech Coverage</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <!-- <h2 class="title is-3">SSR-Speech</h2> -->
-          <img src="./static/images/coverage.jpg" class="interpolation-image" width="1000"
-            alt="Animated demonstration of SSR-Speech." />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- <section class="hero teaser">
     <div class="container is-max-desktop is-centered has-text-centered">
@@ -221,6 +215,7 @@
         <h2 class="title is-3">Table of Contents</h2>
         <div class="is-centered">
           <ul>
+            <li><a href="#overview"><b>CapSpeech Overview</b></a></li>
             <li><a href="#capspeechdata"><b>CapSpeech DataSets</b></a></li>
             <li><a href="#capspeechpt"><b>CapSpeech-PT DataSet</b></a></li>
             <li><a href="#capspeechptsedb"><b>CapSpeech-PT-SEDB DataSet</b></a></li>
@@ -240,6 +235,24 @@
   </div>
 </section>
 
+<section id="overview" class="hero">
+  <div class="hero-body">
+    <div class="container is-fluid">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">CapSpeech Overview</h2>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/present.jpg" class="interpolation-image" width="800"
+            alt="Animated demonstration of SSR-Speech." />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section id="capspeechdata" class="hero">
   <div class="hero-body">
@@ -247,7 +260,9 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">CapSpeech DataSets</h2>
+          <div style="width: 1000px; margin: auto;">
           <hr>
+          
           <div class="box has-background-light">
             <div class="content is-size-5">
               🔥 We release all the captions for 
@@ -258,15 +273,17 @@
                   <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF" style="height: 1em; vertical-align: middle;" />
                 </span> CapSpeech
               </a> 
-              at the Hugging Face Datasets Hub. You can get any subset from the following links:
+              at the Hugging Face Datasets Hub. <br> You can get any subset from the following links:
             </div>
           </div>
           <hr>
         </div>
+
+        </div>
         
       </div>
       <div class="columns is-centered has-text-centered">
-        <div style="width: 1400px; margin: auto;">
+        <div style="width: 1000px; margin: auto;">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="text-align: left;">
@@ -559,7 +576,9 @@
           </div>
         </div>
       </div>
+
       <div class="columns is-centered has-text-centered">
+        <div style="width: 1400px; margin: auto;">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="text-align: left;">
@@ -613,7 +632,7 @@
           </audio></td>
       </tr>
       <tr>
-        <td width="28%" style="text-align: left;">It immediately triggered a deep sense of sadness and grieving.And my phone lit up with people who are sobbing,</td>
+        <td width="28%" style="text-align: left;">It immediately triggered a deep sense of sadness and grieving. And my phone lit up with people who are sobbing,</td>
         <td width="28%" style="text-align: left;">In a room with minimal background noise and reverberation, an elderly man delivers his speech in a monotone manner, his slightly high-pitched voice resonating with a sense of calm and wisdom. His pace is measured, with a slight slowness that allows his words to echo with depth and significance.</td>
         <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capspeech-pt/YOU0000017887_S0000341.wav"
@@ -621,7 +640,7 @@
           </audio></td>
       </tr>
       <tr>
-        <td width="28%" style="text-align: left;">So youve got a number of options, so what it does, it works in this idea of creating a graph projection.</td>
+        <td width="28%" style="text-align: left;">So you've got a number of options, so what it does, it works in this idea of creating a graph projection.</td>
         <td width="28%" style="text-align: left;">The speech emanates from a young adult woman, her voice, a melodious symphony of high-pitched exuberance. Her words flow rapidly, each syllable a testament to her animated spirit, imbued with a subtly expressive tone.</td>
         <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capspeech-pt/YOU0000001726_S0000247.wav"
@@ -631,6 +650,7 @@
 
             </tbody>
         </table>
+      </div>
       </div>
               <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
@@ -653,6 +673,7 @@
         </div>
       </div>
       <div class="columns is-centered has-text-centered">
+        <div style="width: 1400px; margin: auto;">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="text-align: left;">
@@ -721,6 +742,7 @@
             </tbody>
         </table>
       </div>
+      </div>
               <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                   <a href="#toc" class="button is-primary">Go Back to Table of Contents</a>
@@ -743,6 +765,7 @@
         </div>
       </div>
       <div class="columns is-centered has-text-centered">
+        <div style="width: 1400px; margin: auto;">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="text-align: left;">
@@ -816,6 +839,7 @@
             </tbody>
         </table>
       </div>
+      </div>
               <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                   <a href="#toc" class="button is-primary">Go Back to Table of Contents</a>
@@ -840,6 +864,7 @@
         </div>
       </div>
       <div class="columns is-centered has-text-centered">
+        <div style="width: 1400px; margin: auto;">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="text-align: left;">
@@ -898,7 +923,7 @@
       </tr>
       <tr>
         <td width="28%" style="text-align: left;">	
-         in the first chapter of his geography <span style="background-color: #fdcbcc;">&lt;clapping&gt;</span> <span style="background-color: #fdcbcc;">&lt;B&gt;</span> moses tells us there were only two people in the world <span style="background-color: #fdcbcc;">&lt;/B&gt;</span></td>
+         in the first chapter of his geography <span style="background-color: #fdcbcc;">&lt;door_wood_knock&gt;</span> <span style="background-color: #fdcbcc;">&lt;B&gt;</span> moses tells us there were only two people in the world <span style="background-color: #fdcbcc;">&lt;/B&gt;</span></td>
         <td width="28%" style="text-align: left;">In a moderately paced and subdued manner, a middle-aged man delivers his speech with a slightly low-pitched, monotone tone, presenting an understated yet deliberate air.</td>
         <td width="12%" style="text-align: left;"><audio controls="">
             <source src="static/audio_sample/capttssedb/b_097.wav"
@@ -909,6 +934,7 @@
             </tbody>
         </table>
       </div>
+    </div>
               <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                   <a href="#toc" class="button is-primary">Go Back to Table of Contents</a>
@@ -927,11 +953,17 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">CapTTS Results</h2>
           <div class="content">
-            <p>All transcriptions and captions are unseen during training. </p>
+            <p>All transcriptions and captions are unseen during training. 
+              <span class="icon" style="color: #3498db;">
+                <i class="fas fa-magic"></i>
+              </span> CapSpeech-NAR performs better than <span class="icon" style="color: #f39c12;">
+              <i class="fas fa-magic"></i>
+            </span> CapSpeech-AR.</p>
           </div>
         </div>
       </div>
       <div class="columns is-centered has-text-centered">
+        <div style="width: 1400px; margin: auto;">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="text-align: left;">
@@ -1082,6 +1114,7 @@
             </tbody>
         </table>
       </div>
+      </div>
               <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                   <a href="#toc" class="button is-primary">Go Back to Table of Contents</a>
@@ -1098,11 +1131,16 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">CapTTS-SE Results</h2>
           <div class="content">
-            <p>All transcriptions and captions are unseen during training. </p>
+            <p>All transcriptions and captions are unseen during training. <span class="icon" style="color: #f39c12;">
+              <i class="fas fa-magic"></i>
+            </span> CapSpeech-AR performs better than <span class="icon" style="color: #3498db;">
+              <i class="fas fa-magic"></i>
+            </span> CapSpeech-NAR. </p>
           </div>
         </div>
       </div>
       <div class="columns is-centered has-text-centered">
+        <div style="width: 1400px; margin: auto;">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="text-align: left;">
@@ -1218,6 +1256,7 @@
             </tbody>
         </table>
       </div>
+    </div>
               <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                   <a href="#toc" class="button is-primary">Go Back to Table of Contents</a>
@@ -1234,11 +1273,16 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">AccCapTTS Results</h2>
           <div class="content">
-            <p>All transcriptions and captions are unseen during training. </p>
+            <p>All transcriptions and captions are unseen during training. <span class="icon" style="color: #3498db;">
+              <i class="fas fa-magic"></i>
+            </span> CapSpeech-NAR performs better than <span class="icon" style="color: #f39c12;">
+            <i class="fas fa-magic"></i>
+          </span> CapSpeech-AR. </p>
           </div>
         </div>
       </div>
       <div class="columns is-centered has-text-centered">
+        <div style="width: 1400px; margin: auto;">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="text-align: left;">
@@ -1359,7 +1403,7 @@
               type="audio/wav">
           </audio></td>
       </tr> -->
-      <tr>
+      <!-- <tr>
         <td width="28%" style="text-align: left;">Subs not used, McGraw.</td>
         <td width="28%" style="text-align: left;">A mature, <span style="background-color: #b1cdf5;">Australian</span> person voice, deep and rough.</td>
         <td width="12%" style="text-align: left;"><audio controls="">
@@ -1370,7 +1414,7 @@
             <source src="static/audio_sample/emo_acc/p326_270-nar.wav"
               type="audio/wav">
           </audio></td>
-      </tr>
+      </tr> -->
       <!-- <tr>
         <td width="28%" style="text-align: left;">That was a bonus, but it was not the main objective.</td>
         <td width="28%" style="text-align: left;">A mature female voice, with a <span style="background-color: #fdcbcc;">New Zealand accent</span>, sounding feeble and faint.</td>
@@ -1388,6 +1432,7 @@
             </tbody>
         </table>
       </div>
+      </div>
               <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                   <a href="#toc" class="button is-primary">Go Back to Table of Contents</a>
@@ -1404,11 +1449,16 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">EmoCapTTS Results</h2>
           <div class="content">
-            <p>All transcriptions and captions are unseen during training. </p>
+            <p>All transcriptions and captions are unseen during training. <span class="icon" style="color: #3498db;">
+              <i class="fas fa-magic"></i>
+            </span> CapSpeech-NAR performs better than <span class="icon" style="color: #f39c12;">
+            <i class="fas fa-magic"></i>
+          </span> CapSpeech-AR. </p>
           </div>
         </div>
       </div>
       <div class="columns is-centered has-text-centered">
+        <div style="width: 1400px; margin: auto;">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="text-align: left;">
@@ -1534,6 +1584,7 @@
             </tbody>
         </table>
       </div>
+      </div>
               <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                   <a href="#toc" class="button is-primary">Go Back to Table of Contents</a>
@@ -1550,11 +1601,16 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">AgentTTS Results</h2>
           <div class="content">
-            <p>All transcriptions and captions are unseen during training. </p>
+            <p>All transcriptions and captions are unseen during training. <span class="icon" style="color: #3498db;">
+              <i class="fas fa-magic"></i>
+            </span> CapSpeech-NAR performs better than <span class="icon" style="color: #f39c12;">
+            <i class="fas fa-magic"></i>
+          </span> CapSpeech-AR. </p>
           </div>
         </div>
       </div>
       <div class="columns is-centered has-text-centered">
+        <div style="width: 1400px; margin: auto;">
         <table class="table" style="background-color: transparent; width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="text-align: left;">
@@ -1691,6 +1747,7 @@
             </tbody>
         </table>
       </div>
+    </div>
               <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                   <a href="#toc" class="button is-primary">Go Back to Table of Contents</a>
